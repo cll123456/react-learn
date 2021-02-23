@@ -6,6 +6,8 @@ export default class TestEvent extends Component {
   handle = () => {
     console.log(this);
   }
+  
+  
   render() {
     return (
       <div>

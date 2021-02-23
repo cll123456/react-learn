@@ -1,16 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import Page from './pro/compEvent/demo/page'
-// import TestEvent from './pro/compEvent/TestEvent'
-// import BallSport from './pro/compState/demo/BallSport'
-
-
+import App from './App'
 
 ReactDOM.render(
-  <div>
-    <Page panelNum={5} pageSize={10} currentPage={1} total={100} />
-  </div>,
+  <App/>,
   document.getElementById('root')
 )
 
@@ -28,3 +21,6 @@ ReactDOM.render(
 //   </>
 // );
 // h1Dom.props.children = '1232'  
+
+
+

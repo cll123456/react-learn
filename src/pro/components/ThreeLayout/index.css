@@ -1,0 +1,15 @@
+.threeLayout-container{
+  display: flex;
+  
+}
+
+.left{
+  order: 1;
+}
+.main{
+  order: 2;
+  flex: 1 1;
+}
+.right{
+  order: 3;
+}
