@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { List } from '../common/hoc'
+import { IRadio } from '../common/types'
 /**
  * 每一个radio的对象类型
  */
@@ -26,7 +28,28 @@ interface IRadioGroup {
   onChange: (v: any, name: string, e: React.ChangeEvent<HTMLInputElement>) => void,
 }
 
+// class Radio extends Component<IRadio>{
+  
+//   render(){
+//     return (
+//       <label>
+//         <input
+//           type='radio'
+//           value={this.props.info.value}
+//           checked={this.props.info.value === this.props.value}
+//           onChange={e => {
+//             console.log(e.target.value);
+            
+//             this.props.onChange(e.target.value, this.props.name, e)
+//           }}
+//         />
+//         {this.props.info.label}
+//       </label>
+//     )
+//   }
+// }
 
+// export default List(Radio);
 export default class RadioGroup extends Component<IRadioGroup> {
   /**
    * 获取radios 

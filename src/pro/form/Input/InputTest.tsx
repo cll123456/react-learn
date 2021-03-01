@@ -18,7 +18,10 @@ export default class InputTest extends Component<{}, IInputTestS> {
   render() {
     return (
       <div>
-        <Input value={this.state.value} name='test' onChange={this.change}></Input>
+        <Input 
+        value={this.state.value} 
+        name='test' 
+        onChange={this.change}></Input>
       </div>
     )
   }

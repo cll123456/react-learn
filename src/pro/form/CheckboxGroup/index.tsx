@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { List } from '../common/hoc'
+import { ICheckbox } from '../common/types'
 
 /**
  * 每一个radio的对象类型
@@ -27,6 +29,30 @@ interface ICheckboxGroupP {
   onChange: (v: any, name: string, e: React.ChangeEvent<HTMLInputElement>) => void,
 }
 
+
+// /**
+//  * 单个checkbox 组件
+//  */
+// class Checkbox extends Component<ICheckbox>{
+//   render() {
+//     return (
+//       <label >
+//         <input
+//           type='checkbox'
+//           name={this.props.name}
+//           checked={this.props.choose.includes(this.props.info.value)}
+//           value={this.props.info.value}
+//           onChange={e => this.props.onChange(e.target.value, this.props.name, e)}
+//         />
+//         {this.props.info.label}
+//       </label>
+//     )
+//   }
+// }
+
+// export default List(Checkbox)
+
+// checkbox 不使用 高阶组件的形式
 export default class CheckboxGroup extends Component<ICheckboxGroupP> {
 /**
  * 获取checkbox
@@ -36,8 +62,7 @@ export default class CheckboxGroup extends Component<ICheckboxGroupP> {
       return (
        <label key={p.value}>
           <input 
-          type='checkbox' 
-          
+          type='checkbox'          
           name={this.props.name}
           checked={this.props.choose.includes(p.value)}
           value={p.value}

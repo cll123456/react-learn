@@ -28,21 +28,21 @@ export default class CheckboxGroupTest extends Component<{}, ICheckboxGroupTestS
   render() {
     return (
       <>
-        <CheckboxGroup 
-        name='test' 
-        data={this.state.data}
-         choose={this.state.choose} 
-         onChange={(v: string, name: string, e:  React.ChangeEvent<HTMLInputElement>)=>{
-           let arr = [...this.state.choose];
-           if(e.target.checked){
-            arr.push(v);
-           }else{
-            arr = arr.filter(f => f !== v);
-           }
-           this.setState(pre => ({
-             choose: arr
-           }))
-        }}/>
+        <CheckboxGroup
+          name='test'
+          data={this.state.data}
+          choose={this.state.choose}
+          onChange={(v: string, name: string, e: React.ChangeEvent<HTMLInputElement>) => {
+            let arr = [...this.state.choose];
+            if (e.target.checked) {
+              arr.push(v);
+            } else {
+              arr = arr.filter(f => f !== v);
+            }
+            this.setState(pre => ({
+              choose: arr
+            }))
+          }} />
       </>
     )
   }
