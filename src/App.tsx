@@ -9,6 +9,8 @@ import BannerDemo from './pro/ref/BannerDemo'
 import TestClassForwardRef from './pro/ref/TestClassForwardRef'
 import TestFuncForwardRef from './pro/ref/TestFuncForwardRef'
 import TestRef from './pro/ref/TestRef'
+import TestNewContext from './pro/context/TestNewContext'
+import Form from './pro/context/demo/Form'
 
 export default class App extends Component {
   render() {
@@ -21,7 +23,18 @@ export default class App extends Component {
         {/* <TestRef/> */}
         {/* <TestFuncForwardRef></TestFuncForwardRef> */}
         {/* <TestClassForwardRef></TestClassForwardRef> */}
-        <BannerDemo></BannerDemo>
+        {/* <BannerDemo></BannerDemo> */}
+        {/* <TestNewContext /> */}
+
+        <Form>
+          <label>
+            登录 <Form.input name="LoginId" type="text"></Form.input>
+          </label>
+          <label>
+            密码 <Form.input name="password" type="password"></Form.input>
+          </label>
+          <Form.button title='提交'></Form.button>
+        </Form>
       </div>
     )
   }
