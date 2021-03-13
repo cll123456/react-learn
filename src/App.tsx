@@ -11,9 +11,12 @@ import TestFuncForwardRef from './pro/ref/TestFuncForwardRef'
 import TestRef from './pro/ref/TestRef'
 import TestNewContext from './pro/context/TestNewContext'
 import Form from './pro/context/demo/Form'
+import TestPureComponent from './pro/compPureComponent/TestPureComponent'
 
 export default class App extends Component {
   render() {
+    console.log('APP render');
+    
     return (
       <div>
         {/* <InputTest/>
@@ -26,7 +29,7 @@ export default class App extends Component {
         {/* <BannerDemo></BannerDemo> */}
         {/* <TestNewContext /> */}
 
-        <Form>
+        {/* <Form>
           <label>
             登录 <Form.input name="LoginId" type="text"></Form.input>
           </label>
@@ -34,7 +37,9 @@ export default class App extends Component {
             密码 <Form.input name="password" type="password"></Form.input>
           </label>
           <Form.button title='提交'></Form.button>
-        </Form>
+        </Form> */}
+
+        <TestPureComponent/>
       </div>
     )
   }
