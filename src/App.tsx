@@ -12,6 +12,9 @@ import TestRef from './pro/ref/TestRef'
 import TestNewContext from './pro/context/TestNewContext'
 import Form from './pro/context/demo/Form'
 import TestPureComponent from './pro/compPureComponent/TestPureComponent'
+import TestComRenderProp from './pro/comRenderProps/TestComRenderProp'
+import TestComRenderPropHOC from './pro/comRenderProps/TestComRenderPropHOC'
+import TestComPortals from './pro/comPortals/TestComPortals'
 
 export default class App extends Component {
   render() {
@@ -39,7 +42,10 @@ export default class App extends Component {
           <Form.button title='提交'></Form.button>
         </Form> */}
 
-        <TestPureComponent/>
+        {/* <TestPureComponent/> */}
+        {/* <TestComRenderProp/> */}
+        {/* <TestComRenderPropHOC/> */}
+        <TestComPortals/>
       </div>
     )
   }
