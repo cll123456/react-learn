@@ -1,4 +1,4 @@
-import React, { Component, ComponentType } from 'react'
+import React, { Component, ComponentType, MouseEventHandler } from 'react'
 import PageTest from './pro/compEvent/PageTest'
 import BallTest from './pro/compState/BallTest'
 import CheckboxGroupTest from './pro/form/CheckboxGroup/CheckboxGroupTest'
@@ -15,11 +15,14 @@ import TestPureComponent from './pro/compPureComponent/TestPureComponent'
 import TestComRenderProp from './pro/comRenderProps/TestComRenderProp'
 import TestComRenderPropHOC from './pro/comRenderProps/TestComRenderPropHOC'
 import TestComPortals from './pro/comPortals/TestComPortals'
+import TestCompErrorBoundary from './pro/compErrorBoundary/TestCompErrorBoundary'
+import TestCompEventPro from './pro/compEventPro/TestCompEventPro'
+import TestStateHook from './hook/stateHook/TestStateHook'
 
 export default class App extends Component {
   render() {
     console.log('APP render');
-    
+
     return (
       <div>
         {/* <InputTest/>
@@ -45,7 +48,10 @@ export default class App extends Component {
         {/* <TestPureComponent/> */}
         {/* <TestComRenderProp/> */}
         {/* <TestComRenderPropHOC/> */}
-        <TestComPortals/>
+        {/* <TestComPortals/> */}
+        {/* <TestCompErrorBoundary /> */}
+        {/*  <TestCompEventPro/> */}
+        <TestStateHook />
       </div>
     )
   }
