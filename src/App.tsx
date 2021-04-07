@@ -19,6 +19,8 @@ import TestCompErrorBoundary from './pro/compErrorBoundary/TestCompErrorBoundary
 import TestCompEventPro from './pro/compEventPro/TestCompEventPro'
 import TestStateHook from './hook/stateHook/TestStateHook'
 import TestEffectHook from './hook/effectHook/TestEffectHook'
+import TestCusHook from './hook/cusHook/TestCusHook'
+import TestCusComp from './hook/cusHook/TestCusComp'
 
 export default class App extends Component {
   render() {
@@ -53,7 +55,9 @@ export default class App extends Component {
         {/* <TestCompErrorBoundary /> */}
         {/*  <TestCompEventPro/> */}
         {/* <TestStateHook /> */}
-        <TestEffectHook/>
+        {/* <TestEffectHook/> */}
+        {/* <TestCusHook/> */}
+        <TestCusComp/>
       </div>
     )
   }
