@@ -1,4 +1,5 @@
 import React, { Component, ComponentType, MouseEventHandler } from 'react'
+import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
 // import PageTest from './pro/compEvent/PageTest'
 // import BallTest from './pro/compState/BallTest'
 // import CheckboxGroupTest from './pro/form/CheckboxGroup/CheckboxGroupTest'
@@ -26,8 +27,6 @@ import TextContextHook from './hook/contextHook/TextContextHook'
 
 export default class App extends Component {
   render() {
-    console.log('APP render');
-
     return (
       <div>
         {/* <InputTest/>
@@ -61,7 +60,8 @@ export default class App extends Component {
         {/* <TestCusHook/> */}
         {/* <TestCusComp/> */}
         {/* <TestContextComp/> */}
-        <TextContextHook/>
+        {/* <TextContextHook/> */}
+        <TestCallbackHook></TestCallbackHook>
       </div>
     )
   }
