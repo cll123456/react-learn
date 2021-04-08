@@ -1,4 +1,4 @@
-import React, { PureComponent, useCallback, useState } from 'react'
+import React, { PureComponent, useCallback, useMemo, useState } from 'react'
 
 interface ITestClassCompP {
   // 数字
@@ -28,13 +28,15 @@ export function TestCallbackHook() {
   // 输入框的值
   const [inputVal, setInputVal] = useState(0)
 
-  const handle = useCallback(
-    () => {
-      setCount(count + 1)
-    },
-    [count],
-  )
+  // 下面两种方法都可以实现功能
+  // const handle = useCallback(
+  //   () => {
+  //     setCount(count + 1)
+  //   },
+  //   [count],
+  // )
 
+  const handle = useMemo(() => () => setCount(count + 1), [count])
   return (
     <>
       <TestClassComp

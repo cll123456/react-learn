@@ -24,6 +24,7 @@ import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
 // import TestCusComp from './hook/cusHook/TestCusComp'
 // import TestContextComp from './hook/contextHook/TestContextComp'
 import TextContextHook from './hook/contextHook/TextContextHook'
+import TestMemoHook from './hook/memoHook/TestMemoHook';
 
 export default class App extends Component {
   render() {
@@ -61,7 +62,8 @@ export default class App extends Component {
         {/* <TestCusComp/> */}
         {/* <TestContextComp/> */}
         {/* <TextContextHook/> */}
-        <TestCallbackHook></TestCallbackHook>
+        {/* <TestCallbackHook></TestCallbackHook> */}
+        {/* <TestMemoHook/> */}
       </div>
     )
   }
