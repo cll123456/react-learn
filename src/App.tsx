@@ -24,7 +24,10 @@ import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
 // import TestCusComp from './hook/cusHook/TestCusComp'
 // import TestContextComp from './hook/contextHook/TestContextComp'
 import TextContextHook from './hook/contextHook/TextContextHook'
+import TestImperativeHook from './hook/imperativeHook/TestImperativeHook';
+import TestLayoutEffectHook from './hook/layoutEffectHook/TestLayoutEffectHook';
 import TestMemoHook from './hook/memoHook/TestMemoHook';
+import TestRefHook from './hook/refHook/TestRefHook';
 
 export default class App extends Component {
   render() {
@@ -64,6 +67,10 @@ export default class App extends Component {
         {/* <TextContextHook/> */}
         {/* <TestCallbackHook></TestCallbackHook> */}
         {/* <TestMemoHook/> */}
+        {/* <TestRefHook/>
+        <TestRefHook/> */}
+        {/* <TestImperativeHook/> */}
+        <TestLayoutEffectHook/>
       </div>
     )
   }
