@@ -28,6 +28,9 @@ import TestImperativeHook from './hook/imperativeHook/TestImperativeHook';
 import TestLayoutEffectHook from './hook/layoutEffectHook/TestLayoutEffectHook';
 import TestMemoHook from './hook/memoHook/TestMemoHook';
 import TestRefHook from './hook/refHook/TestRefHook';
+import TestBaseTransition from './transition/base/TestBaseTransition';
+import TestCSSTransition from './transition/CSSTransition/TestCSSTransition';
+import TestSwitchTransition from './transition/SwitchTransition/TestSwitchTransition';
 
 export default class App extends Component {
   render() {
@@ -70,7 +73,10 @@ export default class App extends Component {
         {/* <TestRefHook/>
         <TestRefHook/> */}
         {/* <TestImperativeHook/> */}
-        <TestLayoutEffectHook/>
+        {/* <TestLayoutEffectHook/> */}
+        {/* <TestBaseTransition/> */}
+        <TestSwitchTransition/>
+        <TestCSSTransition/>
       </div>
     )
   }
