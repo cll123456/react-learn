@@ -28,6 +28,10 @@ import TestImperativeHook from './hook/imperativeHook/TestImperativeHook';
 import TestLayoutEffectHook from './hook/layoutEffectHook/TestLayoutEffectHook';
 import TestMemoHook from './hook/memoHook/TestMemoHook';
 import TestRefHook from './hook/refHook/TestRefHook';
+import QianTao from './router/example/QianTao';
+import QuanXian from './router/example/QuanXian';
+import QuickStart from './router/example/QuickStart';
+import StaticRoute from './router/example/StaticRoute';
 import TestBaseTransition from './transition/base/TestBaseTransition';
 import FadeTransition from './transition/common/FadeTransition';
 import TestFadeTransition from './transition/common/FadeTransition/TestFadeTransition';
@@ -81,7 +85,12 @@ export default class App extends Component {
         {/* <TestSwitchTransition/>
         <TestCSSTransition/> */}
         {/* <TestTransitionGroup/> */}
-        <TestFadeTransition/>
+        {/* <TestFadeTransition/> */}
+
+        {/* <QuickStart/> */}
+        {/* <QianTao/> */}
+        {/* <QuanXian/> */}
+        <StaticRoute></StaticRoute>
       </div>
     )
   }
