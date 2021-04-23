@@ -18,11 +18,8 @@ export default function ReactRoutAnimation() {
 }
 
 
-
 function RouteAnimate(props: RouteProps) {
   let { component: Comp, children: Child, ...rest } = props;
-
-
   return (<Route {...rest}>
     {
       (values: RouteComponentProps) => {

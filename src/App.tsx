@@ -1,5 +1,6 @@
 import React, { Component, ComponentType, MouseEventHandler } from 'react'
 import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
+import PreventPageLink from './router/example/PreventPageLink';
 // import PageTest from './pro/compEvent/PageTest'
 // import BallTest from './pro/compState/BallTest'
 // import CheckboxGroupTest from './pro/form/CheckboxGroup/CheckboxGroupTest'
@@ -23,23 +24,24 @@ import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
 // import TestCusHook from './hook/cusHook/TestCusHook'
 // import TestCusComp from './hook/cusHook/TestCusComp'
 // import TestContextComp from './hook/contextHook/TestContextComp'
-import TextContextHook from './hook/contextHook/TextContextHook'
-import TestImperativeHook from './hook/imperativeHook/TestImperativeHook';
-import TestLayoutEffectHook from './hook/layoutEffectHook/TestLayoutEffectHook';
-import TestMemoHook from './hook/memoHook/TestMemoHook';
-import TestRefHook from './hook/refHook/TestRefHook';
-import QianTao from './router/example/QianTao';
-import QuanXian from './router/example/QuanXian';
-import QuickStart from './router/example/QuickStart';
-import ReactRoutAnimation from './router/example/ReactRoutAnimation';
-import StaticRoute from './router/example/StaticRoute';
-import TestRouteGuard from './router/example/TestRouteGuard';
-import TestBaseTransition from './transition/base/TestBaseTransition';
-import FadeTransition from './transition/common/FadeTransition';
-import TestFadeTransition from './transition/common/FadeTransition/TestFadeTransition';
-import TestCSSTransition from './transition/CSSTransition/TestCSSTransition';
-import TestSwitchTransition from './transition/SwitchTransition/TestSwitchTransition';
-import TestTransitionGroup from './transition/TransitionGroup/TestTransitionGroup';
+// import TextContextHook from './hook/contextHook/TextContextHook'
+// import TestImperativeHook from './hook/imperativeHook/TestImperativeHook';
+// import TestLayoutEffectHook from './hook/layoutEffectHook/TestLayoutEffectHook';
+// import TestMemoHook from './hook/memoHook/TestMemoHook';
+// import TestRefHook from './hook/refHook/TestRefHook';
+// import QianTao from './router/example/QianTao';
+// import QuanXian from './router/example/QuanXian';
+// import QuickStart from './router/example/QuickStart';
+// import ReactRoutAnimation from './router/example/ReactRoutAnimation';
+// import ScrollToYuanWei from './router/example/scrollToYuanWei';
+// import StaticRoute from './router/example/StaticRoute';
+// import TestRouteGuard from './router/example/TestRouteGuard';
+// import TestBaseTransition from './transition/base/TestBaseTransition';
+// import FadeTransition from './transition/common/FadeTransition';
+// import TestFadeTransition from './transition/common/FadeTransition/TestFadeTransition';
+// import TestCSSTransition from './transition/CSSTransition/TestCSSTransition';
+// import TestSwitchTransition from './transition/SwitchTransition/TestSwitchTransition';
+// import TestTransitionGroup from './transition/TransitionGroup/TestTransitionGroup';
 
 export default class App extends Component {
   render() {
@@ -94,7 +96,9 @@ export default class App extends Component {
         {/* <QuanXian/> */}
         {/* <StaticRoute></StaticRoute> */}
         {/* <TestRouteGuard/> */}
-        <ReactRoutAnimation/>
+        {/* <ReactRoutAnimation/> */}
+        {/* <ScrollToYuanWei/> */}
+        <PreventPageLink/>
       </div>
     )
   }
