@@ -6,12 +6,12 @@ export default function ReactRoutAnimation() {
   return (
     <div style={{ margin: '0 auto', width: '500px', textAlign: 'center', position: "relative" }}>
       <BrowserRouter>
-        <NavLink activeStyle={{ color: '#008c8c' }} to='/A' style={{ marginRight: '20PX' }}>页面A</NavLink>
-        <NavLink activeStyle={{ color: '#008c8c' }} to='/B' style={{ marginRight: '20PX' }}>页面B</NavLink>
-        <NavLink activeStyle={{ color: '#008c8c' }} to='/C'>页面C</NavLink>
-        <RouteAnimate path='/A' component={A}></RouteAnimate>
-        <RouteAnimate path='/B' component={B}></RouteAnimate>
-        <RouteAnimate path='/C' component={C}></RouteAnimate>
+        <NavLink exact activeStyle={{ color: '#008c8c' }} to='/' style={{ marginRight: '20PX' }}>页面A</NavLink>
+        <NavLink exact activeStyle={{ color: '#008c8c' }} to='/B' style={{ marginRight: '20PX' }}>页面B</NavLink>
+        <NavLink exact activeStyle={{ color: '#008c8c' }} to='/C'>页面C</NavLink>
+        <RouteAnimate exact path='/B' component={B}></RouteAnimate>
+        <RouteAnimate exact path='/C' component={C}></RouteAnimate>
+        <RouteAnimate exact path='/' component={A}></RouteAnimate>
       </BrowserRouter>
     </div>
   )
@@ -26,18 +26,18 @@ function RouteAnimate(props: RouteProps) {
         if (Comp) {
           return (
             // <SwitchTransition>
-              <CSSTransition
-                timeout={800}
-                in={values.match ? true : false}
-                classNames={{
-                  enter: 'animate__animated animate__fadeInRight animate__fast',
-                  exit: 'animate__animated animate__fadeOutLeft animate__fast'
-                }}
-                mountOnEnter={true}
-                unmountOnExit={true}
-              >
-                <Comp {...values}></Comp>
-              </CSSTransition>
+            <CSSTransition
+              timeout={800}
+              in={values.match ? true : false}
+              classNames={{
+                enter: 'animate__animated animate__fadeInRight animate__fast',
+                exit: 'animate__animated animate__fadeOutLeft animate__fast'
+              }}
+              mountOnEnter={true}
+              unmountOnExit={true}
+            >
+              <Comp {...values}></Comp>
+            </CSSTransition>
             // </SwitchTransition>
           )
         }

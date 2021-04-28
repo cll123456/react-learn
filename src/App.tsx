@@ -1,5 +1,7 @@
 import React, { Component, ComponentType, MouseEventHandler } from 'react'
 import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
+import TestHandImpUseReducerHook from './redux/useReducerHook/TestHandImpUseReducerHook';
+import TestUseReducerHook from './redux/useReducerHook/TestUseReducerHook';
 import PreventPageLink from './router/example/PreventPageLink';
 // import PageTest from './pro/compEvent/PageTest'
 // import BallTest from './pro/compState/BallTest'
@@ -31,8 +33,8 @@ import PreventPageLink from './router/example/PreventPageLink';
 // import TestRefHook from './hook/refHook/TestRefHook';
 // import QianTao from './router/example/QianTao';
 // import QuanXian from './router/example/QuanXian';
-// import QuickStart from './router/example/QuickStart';
-// import ReactRoutAnimation from './router/example/ReactRoutAnimation';
+import QuickStart from './router/example/QuickStart';
+import ReactRoutAnimation from './router/example/ReactRoutAnimation';
 // import ScrollToYuanWei from './router/example/scrollToYuanWei';
 // import StaticRoute from './router/example/StaticRoute';
 // import TestRouteGuard from './router/example/TestRouteGuard';
@@ -90,7 +92,6 @@ export default class App extends Component {
         <TestCSSTransition/> */}
         {/* <TestTransitionGroup/> */}
         {/* <TestFadeTransition/> */}
-
         {/* <QuickStart/> */}
         {/* <QianTao/> */}
         {/* <QuanXian/> */}
@@ -98,7 +99,9 @@ export default class App extends Component {
         {/* <TestRouteGuard/> */}
         {/* <ReactRoutAnimation/> */}
         {/* <ScrollToYuanWei/> */}
-        <PreventPageLink/>
+        {/* <PreventPageLink/> */}
+        {/* <TestUseReducerHook/> */}
+        <TestHandImpUseReducerHook/>
       </div>
     )
   }

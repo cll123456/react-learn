@@ -25,7 +25,7 @@ export default function QuickStart() {
       // }}
     >
       <div>
-      <Prompt message="Are you sure you want to leave?" />
+      {/* <Prompt message="Are you sure you want to leave?" /> */}
         <nav>
           <ul>
             <li>
@@ -39,9 +39,6 @@ export default function QuickStart() {
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
             <About />
