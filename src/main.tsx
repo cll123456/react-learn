@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 // import './redux/testPrinciple'
-import './redux/reducer'
+// import './redux/reducer'
+import './redux/middlewareApplay/stu-redux-logger/stu-redux-logger'
 ReactDOM.render(
  
     <App />,
