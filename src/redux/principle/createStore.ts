@@ -1,14 +1,22 @@
 import { Reducer, ReducerState } from "react";
+import { Store, StoreEnhancer } from "redux";
 
 
-export default function <R extends Reducer<any, any>, I>(reducer: R, initState?: I & ReducerState<R> & any) {
+export default function createStore  <R extends Reducer<any, any>, I>(reducer: R, initState?: I & ReducerState<R> & any, enhance?:StoreEnhancer):any {
   if (typeof reducer !== 'function') {
     throw new Error('reducer must be a function');
+  }
+  // 判断第二个参数是不是函数,如果是函数的话，说明传入的是一个applyMiddleware
+  if(typeof initState === 'function'){
+    enhance = initState;
+    initState = undefined;
+  }
+  if(typeof enhance === 'function'){
+    return enhance(createStore)(reducer, initState)
   }
 
   let currentReducer: R = reducer,  // 当前执行的reducer
     currentState: I = initState || undefined; // 当前执行的state
-
   let listeners: (() => void)[] = []
   /**
    * 获取当前的状态

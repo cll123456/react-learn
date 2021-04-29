@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import './redux/testPrinciple'
-import './redux/index'
+// import './redux/testPrinciple'
+import './redux/reducer'
 ReactDOM.render(
  
     <App />,
