@@ -12,7 +12,7 @@ export const createAddUserList = (payload: IUserObj): addAction => ({
   payload
 })
 
-/**
+/** 13077923310
  * create a update userList action
  * @param payload 
  * @returns 
@@ -48,7 +48,7 @@ export const createSetMoreUserList = (payload: IUserObj[]): setMoreAction => ({
  */
 export const getUserListAction = ():
   ThunkAction<Promise<void>, userList, any, setMoreAction> => {
-  return async function (dispatch: Dispatch) {
+  return async function (dispatch,getState) {
     const res = await getInitData()
     dispatch(createSetMoreUserList(res))
   }
