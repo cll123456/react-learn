@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 // import './redux/testPrinciple'
 // import './redux/reducer'
-import './redux/middlewareApplay/stu-redux-saga/stu-redux-saga'
+import './redux/middlewareApplay/stu-redux-actions/stu-redux-actions'
 ReactDOM.render(
  
     <App />,
