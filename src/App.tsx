@@ -1,5 +1,6 @@
 import React, { Component, ComponentType, MouseEventHandler } from 'react'
 import { TestCallbackHook } from './hook/callbackHook/TestCallbackHook';
+import Counter from './redux/middlewareApplay/stu-react-redux/comp/Counter';
 import TestHandImpUseReducerHook from './redux/useReducerHook/TestHandImpUseReducerHook';
 import TestUseReducerHook from './redux/useReducerHook/TestUseReducerHook';
 import PreventPageLink from './router/example/PreventPageLink';
@@ -44,22 +45,24 @@ import ReactRoutAnimation from './router/example/ReactRoutAnimation';
 // import TestCSSTransition from './transition/CSSTransition/TestCSSTransition';
 // import TestSwitchTransition from './transition/SwitchTransition/TestSwitchTransition';
 // import TestTransitionGroup from './transition/TransitionGroup/TestTransitionGroup';
-
+import { Provider } from 'react-redux'
+import store from './redux/middlewareApplay/stu-react-redux/store';
 export default class App extends Component {
   render() {
     return (
-      <div>
-        {/* <InputTest/>
+      <Provider store={store}>
+        <div>
+          {/* <InputTest/>
         <RadioGroupTest/>
         <SelectTest/>
         <CheckboxGroupTest/> */}
-        {/* <TestRef/> */}
-        {/* <TestFuncForwardRef></TestFuncForwardRef> */}
-        {/* <TestClassForwardRef></TestClassForwardRef> */}
-        {/* <BannerDemo></BannerDemo> */}
-        {/* <TestNewContext /> */}
+          {/* <TestRef/> */}
+          {/* <TestFuncForwardRef></TestFuncForwardRef> */}
+          {/* <TestClassForwardRef></TestClassForwardRef> */}
+          {/* <BannerDemo></BannerDemo> */}
+          {/* <TestNewContext /> */}
 
-        {/* <Form>
+          {/* <Form>
           <label>
             登录 <Form.input name="LoginId" type="text"></Form.input>
           </label>
@@ -69,40 +72,42 @@ export default class App extends Component {
           <Form.button title='提交'></Form.button>
         </Form> */}
 
-        {/* <TestPureComponent/> */}
-        {/* <TestComRenderProp/> */}
-        {/* <TestComRenderPropHOC/> */}
-        {/* <TestComPortals/> */}
-        {/* <TestCompErrorBoundary /> */}
-        {/*  <TestCompEventPro/> */}
-        {/* <TestStateHook /> */}
-        {/* <TestEffectHook/> */}
-        {/* <TestCusHook/> */}
-        {/* <TestCusComp/> */}
-        {/* <TestContextComp/> */}
-        {/* <TextContextHook/> */}
-        {/* <TestCallbackHook></TestCallbackHook> */}
-        {/* <TestMemoHook/> */}
-        {/* <TestRefHook/>
+          {/* <TestPureComponent/> */}
+          {/* <TestComRenderProp/> */}
+          {/* <TestComRenderPropHOC/> */}
+          {/* <TestComPortals/> */}
+          {/* <TestCompErrorBoundary /> */}
+          {/*  <TestCompEventPro/> */}
+          {/* <TestStateHook /> */}
+          {/* <TestEffectHook/> */}
+          {/* <TestCusHook/> */}
+          {/* <TestCusComp/> */}
+          {/* <TestContextComp/> */}
+          {/* <TextContextHook/> */}
+          {/* <TestCallbackHook></TestCallbackHook> */}
+          {/* <TestMemoHook/> */}
+          {/* <TestRefHook/>
         <TestRefHook/> */}
-        {/* <TestImperativeHook/> */}
-        {/* <TestLayoutEffectHook/> */}
-        {/* <TestBaseTransition/> */}
-        {/* <TestSwitchTransition/>
+          {/* <TestImperativeHook/> */}
+          {/* <TestLayoutEffectHook/> */}
+          {/* <TestBaseTransition/> */}
+          {/* <TestSwitchTransition/>
         <TestCSSTransition/> */}
-        {/* <TestTransitionGroup/> */}
-        {/* <TestFadeTransition/> */}
-        {/* <QuickStart/> */}
-        {/* <QianTao/> */}
-        {/* <QuanXian/> */}
-        {/* <StaticRoute></StaticRoute> */}
-        {/* <TestRouteGuard/> */}
-        {/* <ReactRoutAnimation/> */}
-        {/* <ScrollToYuanWei/> */}
-        {/* <PreventPageLink/> */}
-        {/* <TestUseReducerHook/> */}
-        <TestHandImpUseReducerHook/>
-      </div>
+          {/* <TestTransitionGroup/> */}
+          {/* <TestFadeTransition/> */}
+          {/* <QuickStart/> */}
+          {/* <QianTao/> */}
+          {/* <QuanXian/> */}
+          {/* <StaticRoute></StaticRoute> */}
+          {/* <TestRouteGuard/> */}
+          {/* <ReactRoutAnimation/> */}
+          {/* <ScrollToYuanWei/> */}
+          {/* <PreventPageLink/> */}
+          {/* <TestUseReducerHook/> */}
+          {/* <TestHandImpUseReducerHook/> */}
+          <Counter />
+        </div>
+      </Provider>
     )
   }
 }
